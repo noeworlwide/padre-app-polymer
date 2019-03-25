@@ -1,0 +1,7 @@
+{
+  "name": "padre-app-polymer",
+  "short_name": "padre-app-polymer",
+  "description": "Padre que contiene 2 componentes hijos",
+  "start_url": "/",
+  "display": "standalone"
+}
