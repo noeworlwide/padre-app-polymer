@@ -1,0 +1,29 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../polymer/lib/elements/dom-repeat.html">
+<link rel="import" href="../hijo1-polymer/hijo1-polymer.html">
+<link rel="import" href="../hijo2-polymer/hijo2-polymer.html">
+<dom-module id="padre-app-polymer">
+
+
+  <template id="">
+    <hijo1-polymer on-click="_botones"></hijo1-polymer>
+    <hijo2-polymer></hijo2-polymer>
+  </template>
+
+
+  <script type="text/javascript">
+    class PadreAppPolymer extends Polymer.Element{
+      static get is(){
+        return "padre-app-polymer";
+      }
+      constructor(){
+        super();
+      }
+      _botones(e){
+        console.warn(e.path[2].id);
+      }
+    }
+  window.customElements.define(PadreAppPolymer.is, PadreAppPolymer)
+  </script>
+  
+</dom-module>
